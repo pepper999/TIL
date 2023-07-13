@@ -56,15 +56,14 @@
 
 n = int(input())
 num = list(map(int, input().split()))
-rlt = [0]*n
+pnt = 0
 for i in range(n):
+    rlt = 0
     for j in range(2, num[i]):
-        if num[i] == 1:
-            rlt[i] = 0
-        elif num[i]%j == 0:
-            rlt[i] = 0
-            break
-        else:
-            rlt[i] = 1
+        if num[i]%j != 0:
+            rlt += 1
+    if rlt == num[i]-2:
+        pnt += 1
         
-print(rlt.count(1))  
+        
+print(pnt)  
