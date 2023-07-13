@@ -62,7 +62,9 @@ $ code ~/.gitconfig
 ### 원격 저장소 git에 등록
 ```bash
 $ git remote add {remote_nickname}{remote_url}
+# nickname -> 이후에 주소대신 사용할 nickname(origin)
 ```
+
 
 ### 원격 저장소에 업로드
 ```bash
@@ -73,5 +75,9 @@ $ git push origin master
 - 최초로 내려받을 떄
 ```bash
 $ git clone github_url
+```
+- git 으로 관리되는 폴더가 존재할 떄
+```bash
+$ git pull origin master
 ```
 
