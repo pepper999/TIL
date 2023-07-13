@@ -14,3 +14,40 @@
 ### Git 초기화
 ```bash
 $ git init
+```
+
+### 상태 확인 명령어
+```bash
+$ git status
+```
+
+### staging area에 추가
+```bash
+$ git add {path}<folder_name>/{file_name}
+```
+
+### Repository에 저장하기
+```bash
+$ git commit -m "commit message"
+```
+
+### git 기초 설정
+```bash
+$ git config --global user.email "hun01414@naver.com"
+$ git config --global user.name "정지헌"
+
+$ git config --global --list
+```
+
+### 커밋 기록 확인하기
+```bash
+$ git log
+```
+
+### 직전 커밋 수정하기
+```bash
+$ git commit --amend
+# vlm에서 커밋 내용 수정하기
+# insert 삽입 상태 -> 메시지 수정 -> esc 삽입 상태 종료 -> :wq로 저장 종료
+```
+
