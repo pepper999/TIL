@@ -56,5 +56,6 @@ $ git commit --amend
 # vim을 활용해서 설정 제거하기
 # vim git 설정 파일 열기
 $ vim ~/.gitconfig
+$ code ~/.gitconfig
 # insert 키 -> 수정상태 만들기 -> 수정 후 esc로 수정상태 종료 -> :wq로 저장 종료
 ```
