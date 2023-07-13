@@ -51,3 +51,10 @@ $ git commit --amend
 # insert 삽입 상태 -> 메시지 수정 -> esc 삽입 상태 종료 -> :wq로 저장 종료
 ```
 
+### git 설정 초기화
+```bash
+# vim을 활용해서 설정 제거하기
+# vim git 설정 파일 열기
+$ vim ~/.gitconfig
+# insert 키 -> 수정상태 만들기 -> 수정 후 esc로 수정상태 종료 -> :wq로 저장 종료
+```
