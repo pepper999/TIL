@@ -81,3 +81,12 @@ $ git clone github_url
 $ git pull origin master
 ```
 
+### gitignore
+- git에서 특정 파일이나 디렉토리를 추적하지 않도록 설정
+    1. .gitignore 파일 생성(대부분의 경우 .git과 함께 디렉토리 최상단에 위치 시킴)
+    2. 파일/상대경로 작성을 통해서 추적하지 않도록 설정
+
+### git remote 초기화
+```bash
+$ git remote rm
+```
