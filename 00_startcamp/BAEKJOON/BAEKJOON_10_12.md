@@ -83,3 +83,62 @@ if a[0] + a[1] - a[2] > 0:
 else:
     print(2*(a[0] + a[1]) - 1)
 ```
+
+### 백준 11단계
+- 24262 알고리즘 수업 1
+```python
+print(1)
+print(0)
+```
+- 24263 알고리즘 수업2
+```python
+n = int(input())
+print(n)
+print(1)
+```
+- 24264 알고리즘 수업3
+```python
+n = int(input())
+print(n**2)
+print(2)
+```
+- 24265 알고리즘 수업4
+```python
+n = int(input())
+num = 0
+for i in range(1, n):
+    num += i
+print(num)
+print(2)
+```
+
+- 24266 알고리즘 수업5
+```python
+n = int(input())
+print(n**3)
+print(3)
+```
+- 24267 알고리즘 수업6
+```python
+n = int(input())
+num = 0
+for i in range(1, n-1):
+    num += i * (n - i - 1)
+print(num)
+print(3)
+```
+
+- 24313 알고리즘 수업 - 점근적1
+```python
+a, b = map(int, input().split())
+c = int(input())
+n = int(input())
+fx = a*n + b
+gx = c*n
+if b > 0 and gx >= fx:
+    print(1)
+elif b < 0 and c >= a:
+    print(1)
+else:
+    print(0)
+```
