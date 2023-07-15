@@ -1,6 +1,11 @@
-import random
-students = ['강성은','강주원','고유한','김연빈','김지수','황성주','김해인','문지호','박주헌','이수빈','배준형','손종민','신현기','옥세훈','이승집','이준우','이흔오','장현욱','정지헌','정창휘','조혜원','최용훈','최재성','탁윤희']
-random.shuffle(students)
-print(students)
-    
-    
+a, b, c, d, e, f = map(int, input().split())
+if b != 0 and a != 0:
+    x = ((e/b)*c-f)/((e/b)*a-d)
+    y = ((d/a)*c-f)/((d/a)*b-e)
+elif a == 0:
+    y = c/b
+    x = (f-(c/b)*e)/d
+elif b == 0:
+    x = c/a
+    y = (f-(c/a)*d)/e
+print(int(x), int(y))
