@@ -9,3 +9,5 @@ elif b == 0:
     x = c/a
     y = (f-(c/a)*d)/e
 print(int(x), int(y))
+
+sds
