@@ -8,7 +8,7 @@ for _ in range(T):
     # card_num -> card_max 값의 카드 숫자
     card_num = 0
     N = int(input())
-    card = list(map(int, list(str(input()))))
+    card = list(map(int, input().split()))
     for i in range(N):
         card_count = card.count(card[i])
         if card_count > card_max:

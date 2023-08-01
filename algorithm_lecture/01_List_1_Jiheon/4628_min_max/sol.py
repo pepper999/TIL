@@ -6,7 +6,7 @@ T = int(input())
 for i in range(T):
 	N = int(input())
 	ls = list(map(int, input().split()))
-	temp_max, temp_min = 0, ls[0]
+	temp_max, temp_min = ls[0], ls[0]
 	for j in range(N):
 		if ls[j] > temp_max:
 			temp_max = int(ls[j])
