@@ -27,7 +27,6 @@ for t in range(T):
     for i in range(5):
             rlt.append(num.pop(-1))
             rlt.append(num.pop(0))
-    
     print(f'#{t+1}', *rlt)
 
 
