@@ -22,7 +22,6 @@ for t in range(T):
 
     N = int(input())
     num = list(map(int, input().split()))
-    num.sort()
     rlt = []
     for i in range(5):
             rlt.append(num.pop(-1))
@@ -30,11 +29,11 @@ for t in range(T):
     print(f'#{t+1}', *rlt)
 
 
-# def select(list, n):
-#     for i in range(n):
-#         minindex = i
-#         for j in range(i+1, len(list)):
-#             if list[minindex] > list[j]:
-#                 minindex = j
-#         list[i], list[minindex] = list[minindex], list[i]
-#         return list[n-1]
+def select(list, n):
+    for i in range(n):
+        minindex = i
+        for j in range(i+1, len(list)):
+            if list[minindex] > list[j]:
+                minindex = j
+        list[i], list[minindex] = list[minindex], list[i]
+        return list[n-1]
