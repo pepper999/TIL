@@ -1,5 +1,9 @@
 def under_60(scores):
-    pass
+    cnt = 0
+    for i in range(len(scores)):
+        if scores[i] < 60:
+            cnt += 1
+    return cnt
     # 여기에 코드를 작성합니다.
 
 

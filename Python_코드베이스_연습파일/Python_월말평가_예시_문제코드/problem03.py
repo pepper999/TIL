@@ -1,5 +1,5 @@
 def is_user_data_valid(user_data):
-    pass
+    return user_data['id'] != '' and user_data['password'] != '' 
     # 여기에 코드를 작성합니다.
 
 

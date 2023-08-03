@@ -1,6 +1,10 @@
 # 파이썬 내장함수 min 사용 금지
 def min_score(scores):
-    pass
+    min_scre = scores[0]
+    for i in range(len(scores)-1):
+        if min_scre > scores[i+1]:
+            min_scre = scores[i+1]
+    return min_scre
     # 여기에 코드를 작성합니다.
 
 

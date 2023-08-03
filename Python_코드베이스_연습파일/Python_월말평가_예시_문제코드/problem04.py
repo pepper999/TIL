@@ -1,5 +1,5 @@
 def is_id_valid(user_data):
-    pass
+    return user_data['id'][-1] in [str(i) for i in range(10)]
     # 여기에 코드를 작성합니다.
 
 
