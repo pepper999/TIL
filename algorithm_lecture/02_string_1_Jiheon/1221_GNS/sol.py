@@ -2,6 +2,7 @@ import sys
 sys.stdin = open('input.txt')
 
 num = ["ZRO", "ONE", "TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
+counting = [0]*10
 
 T = int(input())
 for t in range(T):
@@ -9,9 +10,11 @@ for t in range(T):
     N = int(N)
     str = list(input().split())
     for i in range(N):
-        str[i] = num.index(str[i])
-    str.sort()
-    for i in range(N):
-        str[i] = num[str[i]]
+        counting[num.index(str[i])] += 1
+    sorted_str = []
+    for i in range(10):
+        while counting[i] > 0:
+            sorted_str.append(num[i])
+            counting[i] -= 1
     print(t)
-    print(*str)
+    print(*sorted_str)
