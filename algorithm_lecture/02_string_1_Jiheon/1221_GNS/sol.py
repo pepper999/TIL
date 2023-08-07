@@ -2,8 +2,6 @@ import sys
 sys.stdin = open('input.txt')
 
 num = ["ZRO", "ONE", "TWO", "THR", "FOR", "FIV", "SIX", "SVN", "EGT", "NIN"]
-num_ = [i for i in range(10)]
-    
 
 T = int(input())
 for t in range(T):
