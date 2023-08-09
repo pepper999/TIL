@@ -1,12 +1,13 @@
-
 def triangle(N):
     triangle = []
+    stack = []
     for i in range(N):
-        triangle.append([1]*(i + 1))
+        triangle = [1]*(i + 1)
         if i >= 2:
             for j in range(1, i):
-                triangle[i][j] = triangle[i-1][j-1] + triangle[i-1][j]
-    return triangle
+                triangle[j] = stack[-1][j-1] + stack[-1][j]
+        stack.append(triangle)
+    return stack
 T = int(input())
 for t in range(T):
     N = int(input())
