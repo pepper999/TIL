@@ -26,4 +26,3 @@ for tc in range(10):
         node[start].append(end)
     rlt = dfs(101, 1)
     print(f'#{t}', rlt)
-    
