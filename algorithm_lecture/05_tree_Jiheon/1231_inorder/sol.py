@@ -16,6 +16,7 @@ for t in range(10):
     for i in range(N):
         temp = list(input().split())
         node[i+1] = temp[1]
+    print(node)
 
     print(f'#{t+1}', end = ' ')
     # 중위순회 돌림

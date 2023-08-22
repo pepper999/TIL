@@ -26,5 +26,6 @@ for t in range(10):
         if len(temp_input) == 4:
             left[int(temp_input[0])] = int(temp_input[2])
             right[int(temp_input[0])] = int(temp_input[3])
+    print(node)
     postorder(1)
     print(f'#{t+1}', node[1])
