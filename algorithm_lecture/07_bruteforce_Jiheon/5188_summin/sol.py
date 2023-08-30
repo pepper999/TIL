@@ -21,4 +21,4 @@ T = int(input())
 for t in range(T):
     N = int(input())
     box = [list(map(int, input().split())) for _ in range(N)]
-    print(f'#{t+1}', dfs()[-1][-1])
+    print(f'#{t+1}', dfs())
