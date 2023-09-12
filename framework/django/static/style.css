@@ -1,0 +1,86 @@
+.header-background {  
+  padding: 150px ;
+  padding-top: 200px;
+  text-align: center;
+}
+.title {
+  text-align: center;
+}
+.full {
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+tail {
+  padding-bottom: 8px;
+}
+.text-left {
+  text-align: left;
+}
+.d-grid {
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.first {
+  grid-column: 1 / 2; /* 첫 번째 열에 배치 */
+}
+.second {
+  grid-column: 2 / 3; /* 두 번째 열에 배치 */
+}
+.third {
+  grid-column: 3 / 4; /* 세 번째 열에 배치 */
+}
+.center-items {
+  justify-items: center;
+  align-items: center;
+}
+.navbar-expand-lg {
+  justify-content: center;
+}
+.text-lg {
+  font-size: 1.275rem;
+}
+.padding-left {
+  padding-left: 20px;
+}
+.custom-width {
+  width: 90%;
+}
+@media (min-width: 1200px) {
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  .icon-lg {
+    height: 75px;
+    width: 75px;
+  }
+  .icon-xl {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* 화면 크기가 lg 미만일 때 아이콘 크기를 작게 설정 */
+@media (max-width: 1199px) {
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  .icon-lg {
+    height: 50px;
+    width: 50px;
+  }
+  .icon-xl {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-sm {
+    font-size: 0.875rem; /* 작은 텍스트 크기로 조절 */
+  }
+}

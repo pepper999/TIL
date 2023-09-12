@@ -1,0 +1,201 @@
+<!doctype html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pepper999 portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" style = "justify-content: center;"id="mainNav">
+        <div class="container mx-0">
+            <a class="navbar-brand me-0" href="#page-top">Pepper999</a>
+            <button class="navbar-toggler collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active mt-2" href="#about">about me</a></li>
+                    <li class="nav-item"><a class="nav-link active mt-2" href="#skills">skills</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <div class="header-background" id="page-top">
+        <div class="container px-4 text-center">
+          <h1 class="fw-bolder fs-1 py-3">Welcome to Pepper999</h1>
+          <p class="lead py-3">Developer</p>
+        </div>
+      </div>
+    </header>    
+    <main class = "d-flex flex-column justify-content-center align-items-center">
+      <about-me class="title full" id="about">
+        <h1 class="fw-bolder py-3">About me</h1>
+        <about-info class="row justify-content-center align-items-center">
+          <first class = "col-xl-4 col-md-6 col-12 d-flex flex-column">
+            <profile class = "d-flex align-items-center p-4">
+              <div>
+                <img src="{%static '/images/account.png' %}" class="icon-lg">
+              </div>
+              <div class="text-left m-3">
+                <h5 class = "fw-bolder">
+                  Name
+                </h5>
+                <h5>
+                  정지헌
+                </h5>
+              </div>
+            </profile>  
+          </first>
+          <second class = "col-xl-4 col-md-6 col-12 d-flex flex-column">
+            <birth class = "d-flex align-items-center p-4">
+              <div>
+                <img src="{%static 'images/calendar.png' %}" class="icon-lg">
+              </div>
+              <div class="text-left m-3">
+                <h5 class = "fw-bolder">
+                  Birth
+                </h5>
+                <h5>
+                  1999. 01. 13.
+                </h5>
+              </div>
+            </birth>  
+          </second>
+          <third class = "col-xl-4 col-md-6 col-12 d-flex flex-column">
+            <birth class = "d-flex align-items-center p-4">
+              <div>
+                <img src="{%static 'images/locate.png'%}" class="icon-lg">
+              </div>
+              <div class="text-left m-3">
+                <h5 class = "fw-bolder">
+                  Region
+                </h5>
+                <h5>
+                  부산광역시 부산진구
+                </h5>
+              </div>
+            </birth>
+          </third>
+          <forth class = "col-xl-4 col-md-6 col-12 d-flex flex-column">
+            <tele class = "d-flex align-items-center p-4">
+              <div>
+                <img src="{% static 'images/call.png' %}" class="icon-lg">
+              </div>
+              <div class="text-left m-3">
+                <h5 class = "fw-bolder">
+                  Phone
+                </h5>
+                <h5>
+                  010-8312-1760
+                </h5>
+              </div>
+            </tele>
+          </forth>
+          <fifth class = "col-xl-4 col-md-6 col-12 d-flex flex-column">
+            <email class = "d-flex align-items-center p-4">
+              <div>
+                <img src="{%static 'images/gmail.svg'%}" class="icon-lg">
+              </div>
+              <div class="text-left m-3">
+                <h5 class = "fw-bolder">
+                  mail
+                </h5>
+                <h5>
+                  seheon5507@gmail.com
+                </h5>
+              </div>
+            </email>
+          </fifth>
+          <sixth class = "col-xl-4 col-md-6 col-12 d-flex flex-column">
+            <Graduated class = "d-flex align-items-center p-4">
+              <div>
+                <img src="{%static 'images/graduate.png'%}" class="icon-lg">
+              </div>
+              <div class="text-left m-3">
+                <h5 class = "fw-bolder">
+                  Graduated
+                </h5>
+                <h5>
+                  부산대학교
+                </h5>
+              </div>
+            </Graduated>  
+          </sixth>
+        </about-info>
+      </about-me>
+      <skills class="title full p-4" id="skills">
+        <h1 class="fw-bolder py-3">Skills</h1>
+        <about-info class="row justify-content-center my-5">
+          <first class = "col-2 d-flex flex-column align-items-center p-4">
+            <profile class = "d-flex p-4">
+              <img src="{%static 'images/python.svg' %}" class="icon-xl">
+            </profile>
+            <h5 class = "fw-bolder  text-sm">
+              python
+            </h5>  
+          </first>
+          <second class = "col-2 d-flex flex-column align-items-center p-4">
+            <profile class = "d-flex p-4">
+              <img src="{%static 'images/tensorflow.svg' %}" class="icon-xl">
+            </profile>
+            <h5 class = "fw-bolder text-sm">
+              tensorflow
+            </h5>  
+          </second>
+          <third class = "col-2 d-flex flex-column align-items-center p-4">
+            <profile class = "d-flex p-4">
+              <img src="{%static 'images/pytorch.svg' %}" class="icon-xl">
+            </profile>
+            <h5 class = "fw-bolder text-sm">
+              PYTORCH
+            </h5>
+          </third>
+          <forth class = "col-2 d-flex flex-column align-items-center p-4">
+            <profile class = "d-flex p-4">
+              <img src="{%static 'images/html5.svg' %}" class="icon-xl">
+            </profile>
+            <h5 class = "fw-bolder text-sm">
+              HTML5
+            </h5>
+          </forth>
+          <fifth class = "col-2 d-flex flex-column align-items-center p-4">
+            <profile class = "d-flex p-4">
+              <img src="{%static 'images/css3.svg' %}" class="icon-xl">
+            </profile>
+            <h5 class = "fw-bolder text-sm">
+              CSS3
+            </h5>  
+          </fifth>
+        </about-info>
+      </skills>
+    </main>
+    <tail class="d-flex justify-content-center fixed-bottom align-items-center">
+      <tail_info class = 'col-6 ms-3 mt-1 text-sm opacity-50'>
+        web project made by pepper999
+      </tail_info>
+      <sns class="fs-6 fw-bolder d-flex text-center full justify-content-end mt-1">
+        <div class="mx-1">
+          <a href="https://github.com/pepper999" class = "btn">
+            <img src="{% static 'images/github.svg' %}" class = "icon">
+          </a>                
+        </div>
+        <div class="mx-1">
+          <a href="https://www.instagram.com/pepper__9" class = "btn">
+            <img src="{% static 'images/instagram.svg' %}" class = "icon">
+          </a>  
+        </div>
+        <div class="mx-1">
+          <a href="https://www.notion.so/Jiheon-Jeong-0898b42a03dd48129caf621c7ed25d62" class = "btn">
+            <img src="{% static 'images/notion.svg' %}" class = "icon">
+          </a>
+        </div>
+      </sns>
+    </tail> 
+  </body>
+</html>
