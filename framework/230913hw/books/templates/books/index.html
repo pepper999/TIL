@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+  메인 페이지
+{% endblock title %}
+
+{% block content %}
+  {% for item in books_list %}
+    <h3>
+      <a href = "{% url "books:author" item.author %}">{{ item.author }}</a>
+    </h3>
+    {% for book in item.book_list %}
+    <span>{{ book }}</span>
+    {% endfor %}
+  {% endfor %}
+{% endblock content %}
