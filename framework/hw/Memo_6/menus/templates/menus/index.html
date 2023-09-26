@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>전체 메뉴</h1>
+    <hr>
+    {% for menu in menus %}
+    <p>메뉴 번호 : {{ menu.pk }}</p>
+    <p>메뉴 : {{ menu.name }}</p>
+    <p>가격 : {{ menu.price }}</p>
+    <a href="{% url "menus:detail" menu.pk %}">
+        <p>상세 정보</p>
+    </a>
+    <hr>
+    {% endfor %}
+    <ul>
+        <a href="{% url "menus:new" %}">메뉴 등록</a>
+    </ul>
+</body>
+</html>

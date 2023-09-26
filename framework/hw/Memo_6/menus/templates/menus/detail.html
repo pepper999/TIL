@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>상세 정보</h1>
+    <h2>{{ menu.title }}</h2>
+    <hr>
+    <p> {{ menu.description }}</p>
+    <p> 가격 : {{ menu.price }} </p>
+    <p> {{ menu.is_vegan }} </p>
+    <a href="{% url "menus:index" %}">
+        <p>뒤로 가기</p>
+    </a>
+    <a href="{% url "menus:edit" menu.pk %}">
+        <p>수정하기</p>
+    </a>
+    <hr>
+</body>
+</html>
