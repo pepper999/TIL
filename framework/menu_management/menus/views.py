@@ -1,3 +1,4 @@
+from django.views.decorators.http import require_POST
 from django.shortcuts import render, redirect
 from .models import Menu
 from .forms import MenuForm
@@ -23,6 +24,7 @@ def new(request):
     }
     return render(request, 'menus/new.html', context)
 
+@require_POST
 def delete(request, pk):
     menu = Menu.objects.get(pk=pk)
     menu.delete()
