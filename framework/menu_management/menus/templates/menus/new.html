@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>CREATE PAGE</h1>
+    <form action="{% url "menus:new" %}" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value = "CREATE">
+    </form>
+{% endblock content %}

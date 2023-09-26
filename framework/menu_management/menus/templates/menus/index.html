@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>INDEX PAGE</h1>
+    <a href="{% url "menus:new" %}">CREATE</a>
+    <hr>
+    <ul>
+        {% for menu in menus %}
+            <li>
+                <p>{{ menu.pk }}번째 메뉴</p>
+                <p>{{ menu.name }}</p>
+                <p>{{ menu.price }}원</p>
+                <form action="{% url "menus:delete" menu.pk %}" method="POST">
+                    {% csrf_token %}
+                    <input type="submit" value="DELETE"> 
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
