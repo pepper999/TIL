@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>메인 페이지</h1>
+<hr>
+{% for article in articles %}
+<p>
+  {{article.pk}} 번째 게시물입니다
+</p>
+<p>
+  작성자 : {{article.user}}
+</p>
+<p>
+  제목 : {{article.title}}
+</p>
+<form action="{% url "articles:likes" article.pk%}"method="POST">
+  {% csrf_token %}
+  {% if request.user in article.like_users.all %}
+    <input type="submit" value="🖤">
+  {% else %}
+    <input type="submit" value="🤍">
+  {% endif %}
+</form>
+<p><a href="{% url "articles:detail" article.pk %}">상세페이지</a></p>
+<hr>
+{% endfor %}
+{% endblock content %}
