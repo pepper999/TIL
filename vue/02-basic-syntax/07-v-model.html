@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- single checkbox -->
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox"></label>
+
+    <!-- multiple checkbox -->
+    <div>Checked names: </div>
+
+    <input type="checkbox" id="alice" value="Alice">
+    <label for="alice">Alice</label>
+
+    <input type="checkbox" id="bella" value="Bella">
+    <label for="bella">Bella</label>
+
+    <!-- single select -->
+    <div>Selected: </div>
+
+    <select>
+      <option disabled value="">Please select one</option>
+      <option>Alice</option>
+      <option>Bella</option>
+      <option>Cathy</option>
+    </select>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        return {}
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>

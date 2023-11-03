@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Inline Handlers -->
+    <button>Add 1</button>
+    <p>Count: {{ count }}</p>
+
+    <!-- Method Handlers -->
+    <button>Hello</button>
+
+    <!-- Calling Methods in Inline Handlers -->
+    <button>Say hello</button>
+    <button>Say bye</button>
+
+    <!-- Accessing Event Argument in Inline Handlers -->
+    <button>Submit</button>
+
+    <!-- event modifiers -->
+    <form>
+      <input type="submit">
+    </form>
+    <a>Link</a>
+
+    <!-- key modifiers -->
+    <input>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const { createApp, ref } = Vue
+
+    const app = createApp({
+      setup() {
+        return {}
+      }
+    })
+
+    app.mount('#app')
+  </script>
+</body>
+
+</html>
